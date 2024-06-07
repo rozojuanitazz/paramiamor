@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pregunta</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #FFC0CB; /* Color rosado claro */
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+        }
+        button {
+            margin: 10px;
+            padding: 20px 40px; /* Botones más grandes */
+            font-size: 20px; /* Fuente más grande */
+            background-color: #f06292; /* Color de fondo del botón */
+            color: white; /* Color del texto del botón */
+            border: none; /* Sin borde */
+            border-radius: 10px; /* Bordes redondeados */
+            cursor: pointer; /* Cambiar el cursor al pasar por encima */
+        }
+        button:hover {
+            background-color: #ec407a; /* Color al pasar el mouse por encima */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>¿Me amarías si fuese un pez gota?</h1>
+        <button onclick="answer('yes')">Sí</button>
+        <button onclick="answer('no')">No</button>
+    </div>
+
+    <script>
+        function answer(response) {
+            if (response === 'yes') {
+                alert('Yo también te amaría si fueses uno');
+            } else {
+                alert('Estoy muy tiste con esa respuesta:(');
+            }
+            // Aquí puedes agregar cualquier lógica adicional, como redireccionar a otra página
+            // window.location.href = 'https://example.com';
+        }
+    </script>
+</body>
+</html>
